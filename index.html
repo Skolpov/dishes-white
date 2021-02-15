@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет-магазин</title>
+</head>
+
+<style>
+
+	body {
+		margin: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.header-scroll,
+	.scroll-tablet,
+	.scroll-mobile {
+		display: none;
+		position: fixed;
+		width: 100%;
+		z-index: 10px;
+	}
+
+	.scroll-mobile {
+		z-index: -10;
+	}
+
+	.scroll-tablet {
+		z-index: -20;
+	}
+
+	.header-scroll img,
+	.scroll-tablet img,
+	.scroll-mobile img {
+		position: absolute;
+		top: 0;
+	}
+
+	.scroll-tablet,
+	.scroll-mobile {
+		display: none !;
+	}
+
+
+	.project img {
+		top: 0;
+	}
+
+	.project-tablet {
+		display: none;
+	}
+	.project-mobile {
+		display: none;
+	}
+
+
+	.see {
+		display: block;
+	}
+
+
+	@media (max-width: 1024px) {
+		.project {
+			display: none;
+		}
+
+		.project-tablet {
+			display: block;
+		}
+
+		.scroll-tablet {
+			z-index: 10;
+		}
+	
+		.header-scroll {
+			display: none;
+		}
+
+		.scroll-mobile {
+			display: none;
+		}
+	
+	}
+
+	
+
+	@media (max-width: 375px) {
+		.project {
+			display: none;
+		}
+
+		.project-tablet {
+			display: none;
+		}
+
+
+
+		.project-mobile {
+			display: block;
+		}
+
+		.scroll-mobile {
+			display: block;
+			z-index: 10;
+		}
+
+		.scroll-tablet {
+			display: none;
+		}
+
+
+	}
+
+</style>
+
+<body>
+	<div class="header-scroll">
+		<img src="header-scroll.png" alt="">
+	</div>
+
+	<div class="scroll-tablet">
+		<img src="header-tablet.png" alt="">
+	</div>
+
+	<div class="scroll-mobile">
+		<img src="header-mobile.png" alt="">
+	</div>
+
+
+	<div class="project">
+		<img src="desktop.jpg" alt="">
+	</div>
+	<div class="project-tablet">
+		<img src="Tablet.jpg" alt="">
+	</div>
+	<div class="project-mobile">
+		<img src="Mobile.jpg" alt="">
+	</div>
+
+
+	
+
+</body>
+
+<script src="script.js"></script>
+</html>
